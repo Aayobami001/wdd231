@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Student Web Development Portfolio - Home" />
+  <title>WDD231 - Home</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/large.css" />
+
+  <!-- JS -->
+  <script defer src="scripts/home.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/bookmarks-fill.svg" alt="Site Logo" />
+      <h1>Site Name</h1>
+    </div>
+
+    <button id="menuToggle" aria-label="Toggle Menu">☰</button>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Chamber Project</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Home</h2>
+    </section>
+
+    <section class="about">
+      <div class="about-text">
+        <h3>About Me</h3>
+        <p>
+        By the end of this page I aim to give a keyword summary about Myself, firstly my name is Ayobami Akinbiyi. what I
+        love to engage with best is computer programming which I am currently taking my degree cousre WDD 131 Dynamic Web
+        Fundamentals at byu-idaho, I am passionate about web development and excited to learn new
+        technologies. Additionally I am a member of The Church Of Jesus Christ Of Latter Day saint, Also I have served and
+        retunred sucessfully from my mission. I love Football for Sport and food. Thank You for your time see you again!!
+        </p>
+      </div>
+      <div class="about-photo">
+        <h3>My Photo</h3>
+        <img src="images/20250118_033103.jpg" alt="My Photo" />
+      </div>
+    </section>
+
+    <section class="courses-section">
+      <h3>Web Certificate Courses</h3>
+
+      <div class="filter-buttons">
+        <button id="allBtn" class="active">All</button>
+        <button id="cseBtn">CSE</button>
+        <button id="wddBtn">WDD</button>
+      </div>
+
+      <div id="courseContainer" class="courses"></div>
+      <p id="totalCredits" class="total-credits"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+    <a href="https://aayobami001.github.io/wdd231/">Github</a>
+    <a href="https://www.linkedin.com/feed/">LinkedIn</a>
+    <a href="https://x.com/">X</a>
+      <!-- <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a> -->
+      <!-- <a href="#"><img src="images/github.png" alt="GitHub" /></a> -->
+      <!-- <a href="#"><img src="images/x.png" alt="X" /></a> -->
+    </div>
+    <p>&copy; <span id="year"></span> | Ayobami Akinbiyi | Utah, USA</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+    <!-- <a href="https://aayobami001.github.io/wdd231/">Github</a> -->
+  </footer>
+</body>
+</html>
