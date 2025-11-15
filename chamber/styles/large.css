@@ -1,0 +1,21 @@
+@media (min-width:768px){
+  /* show desktop nav inline */
+  .primary-nav{display:block}
+  .primary-nav ul{gap:1rem}
+  .primary-nav.open{display:block}
+  .hamburger{display:none}
+
+  .wrapper{padding:2rem}
+
+  /* members grid two-up on tablet */
+  .members.grid{grid-template-columns:repeat(2,1fr)}
+  .member{padding:1rem}
+
+  @media (min-width:1000px){
+    /* desktop: 3 columns */
+    .members.grid{grid-template-columns:repeat(3,1fr)}
+  }
+
+  .footer-inner{flex-direction:row;justify-content:space-between;align-items:center}
+  .footer-meta{text-align:right}
+}

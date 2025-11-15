@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="Lagos Chamber of Commerce - Directory of local businesses and members."/>
+  <meta name="author" content="Ayobami I. Akinbiyi"/>
+  <title>Lagos Chamber of Commerce — Directory</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+  <!-- Facebook / Open Graph meta -->
+  <meta property="og:title" content="Lagos Chamber of Commerce - Directory"/>
+  <meta property="og:description" content="Find local Lagos businesses and Chamber members — search, view and connect."/>
+  <meta property="og:image" content="images/logo.svg"/>
+  <meta property="og:url" content="https://aayobami001.github.io/wdd231/"/>
+  <meta property="og:type" content="website"/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS: normalize first -->
+  <link rel="stylesheet" href="styles/normalize.css"/>
+  <link rel="stylesheet" href="styles/small.css"/>
+  <link rel="stylesheet" href="styles/large.css"/>
+
+  <!-- JS (deferred) -->
+  <script defer src="scripts/directory.js"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="images/bookmarks-fill.svg" alt="Lagos Chamber of Commerce logo" class="logo" width="48" height="48">
+        <span class="site-title">Lagos Chamber of Commerce</span>
+      </div>
+
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">◑</button>
+
+      <button id="menuButton" class="hamburger" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="hamburger-box" aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="directory.html" aria-current="page">Directory</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main" class="wrapper">
+    <div class="hero">
+      <h1>Directory</h1>
+      <p class="lead">Find Lagos businesses that are members of the Chamber. Toggle between grid and list views.</p>
+    </div>
+
+    <section class="controls" aria-label="view controls">
+      <div class="view-toggle" role="toolbar" aria-label="View controls">
+        <button id="gridBtn" class="icon-btn active" title="Grid view" aria-pressed="true" aria-label="Grid view">
+          <!-- grid icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg>
+        </button>
+
+        <button id="listBtn" class="icon-btn" title="List view" aria-pressed="false" aria-label="List view">
+          <!-- list icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="2"/><rect x="4" y="11" width="16" height="2"/><rect x="4" y="17" width="16" height="2"/></svg>
+        </button>
+      </div>
+
+      <div class="search-stats">
+        <span id="shownCount">Showing <strong id="countNumber">0</strong> members</span>
+      </div>
+    </section>
+
+    <section id="membersList" class="members grid" aria-live="polite" aria-label="Chamber members">
+      <!-- JS will populate member cards here -->
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <h3>Lagos Chamber of Commerce</h3>
+        <address>
+          12 Marina Avenue<br/>
+          Lagos, Nigeria<br/>
+          <a href="mailto:info@lagoschamber.ng">info@lagoschamber.ng</a><br/>
+          (01) 800-555-1234
+        </address>
+      </div>
+
+      <div class="footer-social">
+        <a href="#" aria-label="YouTube"><img src="images/placeholder-business.png" alt="YouTube icon"/></a>
+        <a href="#" aria-label="Twitter"><img src="images/placeholder-business.png" alt="Twitter icon"/></a>
+        <a href="#" aria-label="LinkedIn"><img src="images/placeholder-business.png" alt="LinkedIn icon"/></a>
+      </div>
+
+      <div class="footer-meta">
+        <p>&copy; <span id="copyrightYear"></span> Ayobami I. Akinbiyi — WDD 231</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

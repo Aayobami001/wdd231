@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "name": "Lekki Fresh Foods",
+    "address": "Plot 12, Lekki Phase 1, Lagos",
+    "phone": "+234-701-000-1111",
+    "url": "https://lekkifresh.example",
+    "image": "bus1.jpeg",
+    "membership": 3,
+    "category": "Retail",
+    "description": "Local organic produce supplier and market stall supporting Lagos smallholders."
+  },
+  {
+    "id": 2,
+    "name": "Ikeja Tech Hub",
+    "address": "No. 3 Allen Ave, Ikeja, Lagos",
+    "phone": "+234-701-000-2222",
+    "url": "https://ikejatech.example",
+    "image": "bus2.jpeg",
+    "membership": 2,
+    "category": "Services",
+    "description": "Co-working, training, and accelerator programs for Lagos tech entrepreneurs."
+  },
+  {
+    "id": 3,
+    "name": "Victoria Island Travel",
+    "address": "7 Marina Rd, Victoria Island",
+    "phone": "+234-701-000-3333",
+    "url": "https://visatravel.example",
+    "image": "bus3.jpeg",
+    "membership": 1,
+    "category": "Travel",
+    "description": "Travel agency offering business travel bookings across West Africa."
+  },
+  {
+    "id": 4,
+    "name": "Eko Cleaners",
+    "address": "21 Surulere St, Surulere",
+    "phone": "+234-701-000-4444",
+    "url": "https://ekoclean.example",
+    "image": "bus4.png",
+    "membership": 2,
+    "category": "Services",
+    "description": "Commercial cleaning services for small and medium enterprises."
+  },
+  {
+    "id": 5,
+    "name": "Island Café",
+    "address": "4 Broad St, Lagos Island",
+    "phone": "+234-701-000-5555",
+    "url": "https://islandcafe.example",
+    "image": "bus5.jpeg",
+    "membership": 3,
+    "category": "Food & Beverage",
+    "description": "Popular café supporting local producers and hosting community events."
+  },
+  {
+    "id": 6,
+    "name": "Ajegunle Auto Parts",
+    "address": "10 Iyana Ipaja, Ajegunle",
+    "phone": "+234-701-000-6666",
+    "url": "https://ajeparts.example",
+    "image": "bus6.jpg",
+    "membership": 1,
+    "category": "Retail",
+    "description": "Family-run auto parts distributor serving mechanics in Lagos."
+  },
+  {
+    "id": 7,
+    "name": "Lekki Legal Advisors",
+    "address": "15 Admiralty Rd, Lekki",
+    "phone": "+234-701-000-7777",
+    "url": "https://lekkilegal.example",
+    "image": "bus7.jpeg",
+    "membership": 2,
+    "category": "Professional",
+    "description": "Corporate and small-business legal services with local expertise."
+  }
+]
