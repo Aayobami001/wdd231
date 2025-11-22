@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lagos Chamber of Commerce - Home page">
+  <meta name="author" content="Ayobami I. Akinbiyi">
+  <title>Lagos Chamber of Commerce — Home Page</title>
+
+  <link rel="icon" href="favicon.ico" type="image/badge-cc-fill"/>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lagos Chamber of Commerce Home Page"/>
+  <meta property="og:description" content="Supporting Lagos businesses — events, member directory, and resources."/>
+  <meta property="og:image" content="images/hero.webp"/>
+  <meta property="og:url" content="https://aayobami001.github.io/wdd231/"/>
+  <meta property="og:type" content="website"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css"/>
+  <link rel="stylesheet" href="styles/small.css"/>
+  <link rel="stylesheet" href="styles/large.css"/>
+
+  <!-- JS (deferred) -->
+  <script defer src="scripts/home.js"></script>
+</head>
+<body>
+  <!-- Header (same structure as directory page) -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="images/bookmarks-fill.svg" alt="Lagos Chamber of Commerce logo" class="logo" width="48" height="48">
+        <span class="site-title">Lagos Chamber of Commerce</span>
+      </div>
+
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">◑</button>
+
+      <button id="menuButton" class="hamburger" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="hamburger-box" aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="home.html" aria-current="page">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main" class="wrapper">
+    <!-- HERO -->
+    <section class="hero-outer" role="region" aria-label="Hero">
+      <div class="hero-image" style="background-image: url('images/hero.jpg');" role="img" aria-label="Lagos skyline at night">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Welcome to the Lagos Chamber of Commerce</h1>
+            <p class="hero-sub">Supporting local businesses, fostering growth, and connecting the community.</p>
+          </div>
+
+          <div class="hero-cta">
+            <a class="btn-primary" href="join.html" title="Join the chamber">Join the Chamber</a>
+            <a class="btn-secondary" href="directory.html" title="Explore members">Explore Members</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS / WEATHER ROW -->
+    <section class="row panels" aria-label="Information panels">
+      <article class="panel events" aria-labelledby="eventsHeading">
+        <h2 id="eventsHeading">Events</h2>
+        <div class="panel-body">
+          <p><strong>Next:</strong> Lagos Business Expo — July 21, 2025</p>
+          <p><a href="#" class="small-link">See all events</a></p>
+        </div>
+      </article>
+
+      <!-- Weather API Functionality -->
+      <article class="panel weather">
+        <h2>Weather</h2>
+        <div class="weather-box">Loading weather...</div>
+      </article>
+
+      <!-- <articleS class="panel forecast">
+        <h2 id="forecastHeading"></h2>
+        <div class="forecast-box">
+        <p class="muted">Loading forecast...</p>
+        </div>
+      </articleS> -->
+    </section>
+
+    <section class="forecast">
+        <div class="forecast-box">
+            Loading 3-day forecast...
+        </div>
+    </section>
+
+    <!-- SPOTLIGHTS -->
+    <section class="spotlights" aria-label="Member spotlights">
+      <h2>Member Spotlights</h2>
+      <p class="lead">Celebrating our featured Silver and Gold members.</p>
+
+      <div id="spotlightContainer" class="spotlight-grid">
+        <!-- JS will inject 2–3 spotlight cards here -->
+      </div>
+
+      <p class="small-note"><a id="viewAllMembers" href="directory.html">View all members</a></p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <h3>Lagos Chamber of Commerce</h3>
+        <address>
+          12 Marina Avenue<br/>
+          Lagos, Nigeria<br/>
+          <a href="mailto:info@lagoschamber.ng">info@lagoschamber.ng</a><br/>
+          (01) 800-555-1234
+        </address>
+      </div>
+
+      <div class="footer-social">
+        <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn Icon"/></a>
+        <a href="#" aria-label="YouTube"><img src="images/youtube.svg" alt="YouTube Icon"/></a>
+        <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook Icon"/></a>
+      </div>
+
+      <div class="footer-meta">
+        <p>&copy; <span id="copyrightYear"></span> 🍓Ayobami I. Akinbiyi 🍓 WDD 231🍓</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

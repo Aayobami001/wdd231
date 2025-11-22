@@ -19,3 +19,20 @@
   .footer-inner{flex-direction:row;justify-content:space-between;align-items:center}
   .footer-meta{text-align:right}
 }
+
+/* Week 3 - Home Page */
+@media (min-width:768px){
+  /* hero content layout - keep CTA on right on larger screens */
+  .hero-image{min-height:420px}
+  .hero-text{max-width:65%}
+  .hero-cta{align-self:center}
+
+  /* panels become 3 columns */
+  .row.panels{grid-template-columns: 1fr 320px 220px; align-items:start}
+
+  /* spotlights two-up on tablet, three-up on desktop */
+  .spotlight-grid{grid-template-columns:repeat(2, 1fr)}
+  @media (min-width:1000px){
+    .spotlight-grid{grid-template-columns:repeat(3, 1fr)}
+  }
+}

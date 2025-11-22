@@ -209,6 +209,200 @@ body{
     flex-direction:row;
 }
 
+/* Week 3 - Home page Layout */
+/* HERO (Option 2: CTA on right) */
+.hero-outer { margin-top: 1rem; }
+.hero-image {
+  position: relative;
+  width: 100%;
+  min-height: 320px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+  display:flex;
+  align-items:center;
+}
+
+.hero-overlay {
+  position:absolute; 
+  inset:0; 
+  background: linear-gradient(60deg, rgba(10,77,104,0.55) 0%, rgba(10,77,104,0.25) 70%, rgba(10,77,104,0.7) 100%);
+  pointer-events:none;
+}
+
+.hero-content {
+  position:relative;
+  display:flex;
+  width:100%;
+  justify-content:space-between;
+  align-items:center;
+  padding:1.25rem;
+  gap:1rem;
+}
+
+.hero-text {
+  max-width:60%;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.hero-text h1 {
+font-family:"Poppins",sans-serif;
+font-size:1.6rem;
+margin-bottom:.25rem;
+}
+
+.hero-sub {opacity:0.95;font-size:1rem}
+
+/* CTA box on right */
+.hero-cta {
+  width:220px;
+  background: rgba(255,255,255,0.95);
+  padding:1rem;
+  border-radius:10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  text-align:center;
+  align-self:flex-end;
+}
+
+.btn-primary{
+  display:inline-block;
+  background:var(--primary);
+  color:#fff;
+  padding:0.6rem 0.9rem;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:600;
+  margin-bottom:0.5rem;
+}
+
+.btn-secondary{
+    /* L */
+  display:inline-block;
+  background:transparent;
+  color:var(--primary);
+  border:1px solid var(--primary);
+  padding:0.4rem 0.8rem;
+  border-radius:6px;
+  text-decoration:none;
+}
+
+/* Panels row (events / weather / forecast) */
+.row.panels {
+display:grid;
+grid-template-columns:1fr;
+gap:1rem;
+margin-top:1rem;
+}
+
+.panel {
+background: linear-gradient(60deg, rgba(10,77,104,0.55) 0%, rgba(10,77,104,0.25) 70%, rgba(10,77,104,0.7) 100%);
+border-radius:8px;
+padding:1rem;
+border:1px solid var(--muted);
+height: 27rem;
+}
+
+.panel h2 {
+background:#222;
+color:#fff;
+padding:0.5rem;
+/* L */
+border-radius:4px 4px 0 0;
+/* L */
+margin: -1rem -1rem 0 -1rem;
+font-size:1rem;
+}
+
+.panel-body{padding:0.75rem}
+
+/* Weather API Styles */
+.weather {
+    background: linear-gradient(60deg, rgba(10,77,104,0.55) 0%, rgba(10,77,104,0.25) 70%, rgba(10,77,104,0.7) 100%);
+    border-radius: 10px;
+}
+
+.weather-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 25rem;
+}
+
+
+.forecast {
+    padding: 20px;
+    background: linear-gradient(60deg, rgba(10,77,104,0.55) 0%, rgba(10,77,104,0.25) 70%, rgba(10,77,104,0.7) 100%);
+
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    text-align: center;
+}
+
+.forecast-card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.forecast-card h4 {
+    margin-bottom: 5px;
+}
+
+/* Spotlights grid */
+.spotlight-grid {
+display:grid;
+grid-template-columns:1fr;
+gap:1rem;
+margin-top:1rem;
+}
+
+.spotlight-card {
+background:#fff;
+border-radius:8px;
+padding:1rem;
+border:1px solid var(--muted);
+display:flex;
+gap:0.75rem;
+align-items:flex-start;
+}
+
+.spotlight-card img {
+width:120px;
+height:90px;
+object-fit:cover;
+border-radius:6px;
+}
+
+.spotlight-card .spot-meta h3 {
+margin:0;
+font-family:"Poppins",sans-serif;
+color:var(--primary);
+}
+
+.spotlight-card .spot-meta p{margin:0.25rem 0;color:#333}
+
+/* small screens adjustments */
+@media (max-width:700px){
+  .hero-image{min-height:260px}
+  .hero-content{flex-direction:column;align-items:flex-start}
+  .hero-text{max-width:100%}
+  .hero-cta{width:100%;align-self:stretch}
+  .row.panels{grid-template-columns:1fr}
+  .spotlight-grid{grid-template-columns:1fr}
+}
+
+
+
 /* footer */
 .site-footer {
     background:#fff;
