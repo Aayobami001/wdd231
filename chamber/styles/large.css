@@ -36,3 +36,10 @@
     .spotlight-grid{grid-template-columns:repeat(3, 1fr)}
   }
 }
+
+/* Join Page | Membership level titles Wk4 */
+@media(min-width: 850px) {
+  .join-container {
+    grid-template-columns: 2fr 1fr;
+  }
+}

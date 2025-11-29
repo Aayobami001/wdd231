@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="The purpose of this page is for a prospective member to apply to join the chamber of commerce through a membership application form">
+  <meta name="author" content="Ayobami I. Akinbiyi">
+  <title>Join The Chamber | Empower Growth Chamber</title>
+  <link rel="stylesheet" href="styles/small.css"/>
+  <link rel="stylesheet" href="styles/large.css">
+  <script defer src="scripts/join.js"></script>
+</head>
+
+<body>
+    <!-- Header (same structure as directory page) -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="images/bookmarks-fill.svg" alt="Lagos Chamber of Commerce logo" class="logo" width="48" height="48">
+        <span class="site-title">Lagos Chamber of Commerce</span>
+      </div>
+
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">◑</button>
+
+      <button id="menuButton" class="hamburger" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="hamburger-box" aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="join.html" aria-current="page">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <h1 class="join-header">Empower Growth Chamber</h1>
+
+  <main class="join-container">
+
+    <!-- MEMBERSHIP FORM -->
+
+    <section class="join-form-section">
+      <h2>Chamber Membership Application</h2>
+
+      <form method="get" action="thankyou.html" class="join-form">
+
+        <!-- First Name -->
+        <label>
+          First Name:
+          <input type="text" name="first" required title="Your first name" autocomplete="given-name">
+        </label>
+
+        <!-- Last Name -->
+        <label>
+          Last Name:
+          <input type="text" name="last" required title="Your last name" autocomplete="family-name">
+        </label>
+
+        <!-- Organization Title -->
+        <label>
+          Organizational Title:
+          <input type="text" name="orgtitle" title="Your organizational title" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" placeholder="e.g. Senior Manager">
+        </label>
+
+        <!-- Email -->
+        <label>
+          Email Address:
+          <input type="email" name="email" required title="Valid email address" autocomplete="email" placeholder="example@company.com">
+        </label>
+
+        <!-- Phone -->
+        <label>
+          Mobile Phone:
+          <input type="tel" name="phone" required title="Mobile phone" autocomplete="tel">
+        </label>
+
+        <!-- Business Name -->
+        <label>
+          Business / Organization Name:
+          <input type="text" name="organization" required title="Business name" autocomplete="organization">
+        </label>
+
+        <!-- Membership Level -->
+        <label>
+          Membership Level:
+          <select name="membership" required title="Select membership level">
+            <option value="">-- Select Level --</option>
+            <option value="np">NP Membership (Non-profit)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <!-- Business Description -->
+        <label>
+          Business Description:
+          <textarea name="description" title="Describe the business"></textarea>
+        </label>
+
+        <!-- HIDDEN TIMESTAMP -->
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Application" class="submit-btn">
+      </form>
+    </section>
+
+    <!-- MEMBERSHIP LEVEL CARDS -->
+    <section class="membership-cards">
+      <h2>Membership Levels</h2>
+
+      <div class="cards-grid">
+
+        <!-- NP Card -->
+        <div class="mcard fade-in">
+          <h3>NP Membership</h3>
+          <p>For non-profit organizations. No fee.</p>
+          <a href="#" class="open-modal" data-modal="npModal">Learn More</a>
+        </div>
+
+        <!-- Bronze Card -->
+        <div class="mcard fade-in">
+          <h3>Bronze Membership</h3>
+          <p>Starter benefits at low cost.</p>
+          <a href="#" class="open-modal" data-modal="bronzeModal">Learn More</a>
+        </div>
+
+        <!-- Silver Card -->
+        <div class="mcard fade-in">
+          <h3>Silver Membership</h3>
+          <p>More visibility and perks.</p>
+          <a href="#" class="open-modal" data-modal="silverModal">Learn More</a>
+        </div>
+
+        <!-- Gold Card -->
+        <div class="mcard fade-in">
+          <h3>Gold Membership</h3>
+          <p>Full premium benefits.</p>
+          <a href="#" class="open-modal" data-modal="goldModal">Learn More</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Four MODALS -->
+    <!-- NP Modal -->
+    <div id="npModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>NP Membership Benefits</h2>
+        <ul>
+          <li>No membership fee</li>
+          <li>Access to public events</li>
+          <li>Networking with local businesses</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bronze Modal -->
+    <div id="bronzeModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Bronze Membership Benefits</h2>
+        <ul>
+          <li>Event invitations</li>
+          <li>Small business training</li>
+          <li>Directory listing</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Silver Modal -->
+    <div id="silverModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Silver Membership Benefits</h2>
+        <ul>
+          <li>All Bronze benefits</li>
+          <li>Spotlight ads twice yearly</li>
+          <li>Discounted chamber events</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Gold Modal -->
+    <div id="goldModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Gold Membership Benefits</h2>
+        <ul>
+          <li>All Silver benefits</li>
+          <li>Premium advertising</li>
+          <li>VIP event access</li>
+          <li>Annual business consultation</li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <h3>Lagos Chamber of Commerce</h3>
+        <address>
+          12 Marina Avenue<br/>
+          Lagos, Nigeria<br/>
+          <a href="mailto:info@lagoschamber.ng">info@lagoschamber.ng</a><br/>
+          (01) 800-555-1234
+        </address>
+      </div>
+
+      <div class="footer-social">
+        <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn Icon"/></a>
+        <a href="#" aria-label="YouTube"><img src="images/youtube.svg" alt="YouTube Icon"/></a>
+        <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook Icon"/></a>
+      </div>
+
+      <div class="footer-meta">
+        <p>&copy; 2025 Empower Growth Chamber<span id="copyrightYear"></span> 🍓Ayobami I. Akinbiyi 🍓 WDD 231🍓</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
