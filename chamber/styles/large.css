@@ -43,3 +43,43 @@
     grid-template-columns: 2fr 1fr;
   }
 }
+
+/* Discoverr page WK5 */
+/* Discover layout: medium screens (641px - 1024px) and large screens (1025px+) */
+
+/* medium layout two columns with grid-template-areas */
+@media (min-width: 641px) {
+  .discover-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    /* name the 8 areas in reading order (left->right, top->bottom) */
+    grid-template-areas:
+      "a1 a2"
+      "a3 a4"
+      "a5 a6"
+      "a7 a8";
+  }
+
+  /* apply hover effect on images for non-mobile */
+  .place-card img {
+    transition: transform .35s ease, opacity .35s ease, filter .35s ease;
+  }
+  .place-card:hover img {
+    transform: scale(1.04) translateY(-4px);
+    filter: brightness(0.95) saturate(1.05);
+  }
+}
+
+/* large layout (≥1025px) - three columns, but still using named areas */
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    grid-template-areas:
+      "a1 a2 a3"
+      "a4 a5 a6"
+      "a7 a8 a8";
+  }
+  .place-card { padding: 1rem; }
+  .modal-content { max-width: 900px; }
+}

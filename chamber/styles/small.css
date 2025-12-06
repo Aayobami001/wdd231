@@ -539,3 +539,119 @@ color:var(--primary);
   margin: auto;
   padding: 2rem;
 }
+
+/* Discover page WK5 */
+
+/* discover-wrapper + areas are mobile-first */
+.discover-wrapper { 
+max-width: 1200px; 
+margin: 0 auto; 
+padding: 1rem;
+}
+
+.discover-header { 
+margin-bottom: 1rem;
+}
+
+/* last visit message area */
+.visit-message { 
+margin-top: .5rem; 
+padding: .5rem 0; 
+color: var(--primary); 
+font-weight:600;
+}
+
+/* grid container uses named areas — on small screen it's single column */
+.discover-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  grid-template-areas:
+    "a1"
+    "a2"
+    "a3"
+    "a4"
+    "a5"
+    "a6"
+    "a7"
+    "a8";
+}
+
+/* place-card base */
+.place-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: .75rem;
+  border: 1px solid var(--muted);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.place-card h2 { 
+font-family: "Poppins", sans-serif; 
+margin: 0 0 .5rem; 
+color:var(--primary); 
+font-size:1.05rem; 
+}
+
+.place-card figure { 
+margin: 0 0 .5rem; 
+}
+
+.place-card img { 
+width:100%; 
+height:auto; 
+display:block; 
+border-radius:6px; 
+}
+
+.place-card address { 
+display:block; 
+font-style: normal; 
+color:#444; 
+font-size:0.95rem; 
+margin-bottom:.5rem; 
+}
+
+.place-card p { 
+margin-bottom:.75rem; 
+color:#333; 
+}
+
+.learn-btn {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: .45rem .75rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* modal base (reusable from other pages) */
+.modal { 
+display: none; 
+position: fixed; 
+inset: 0; 
+background: rgba(0,0,0,.6); 
+z-index: 2000; 
+}
+
+.modal-content { 
+background: #fff; 
+margin: 7% auto; 
+padding: 1rem; 
+width: 92%; 
+max-width: 720px; 
+border-radius: 10px; 
+position: relative; 
+}
+
+.modal-close { 
+position: absolute; 
+top: .5rem; 
+right: .75rem; 
+background: none; 
+border: none; 
+font-size:1.4rem; 
+cursor:pointer; 
+}
+/* the hover effect will applies only on devices wider than 641px (added in large.css) */
