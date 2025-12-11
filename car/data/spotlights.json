@@ -1,0 +1,58 @@
+[
+  {
+    "brand": "Toyota",
+    "model": "Camry XSE",
+    "price": "$32,500",
+    "image": "camry.webp",
+    "description": "A dependable midsize sedan with sporty performance and premium comfort."
+  },
+  {
+    "brand": "BMW",
+    "model": "330i M Sport",
+    "price": "$47,900",
+    "image": "bmw330.webp",
+    "description": "Sporty handling and luxury features define this executive-class sedan."
+  },
+  {
+    "brand": "Mercedes",
+    "model": "C300 AMG",
+    "price": "$51,000",
+    "image": "c300.webp",
+    "description": "A refined luxury sedan combining power, style, and advanced technology."
+  },
+  {
+    "brand": "Honda",
+    "model": "Accord Sport",
+    "price": "$29,900",
+    "image": "accord.webp",
+    "description": "Popular for its reliability, efficiency, and modern styling."
+  },
+  {
+    "brand": "Lexus",
+    "model": "RX 350",
+    "price": "$58,000",
+    "image": "lexusrx.webp",
+    "description": "Luxury SUV known for comfort, safety, and signature Lexus refinement."
+  },
+  {
+    "brand": "Kia",
+    "model": "Sportage GT-Line",
+    "price": "$26,800",
+    "image": "sportage.webp",
+    "description": "Bold exterior design paired with efficient performance and modern tech."
+  },
+  {
+    "brand": "Mazda",
+    "model": "CX-5 Signature",
+    "price": "$39,500",
+    "image": "cx5.webp",
+    "description": "One of the best-handling crossovers with premium interior feel."
+  },
+  {
+    "brand": "Audi",
+    "model": "A4 Premium",
+    "price": "$43,700",
+    "image": "a4.webp",
+    "description": "Elegant German engineering with smooth ride and high-end features."
+  }
+]

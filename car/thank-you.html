@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You | AutoHub</title>
+
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/site.css">
+  <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">AutoHub</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="thank-you-page">
+    <div class="thank-you-box">
+      <h1>Thank You!</h1>
+      <p>Your message has been successfully submitted.</p>
+      <p>A member of our team will contact you shortly.</p>
+
+      <a class="cta" href="index.html">Return to Home</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> AutoHub Multi-Brand Dealership</p>
+    <p>Designed by Drealbamz - WDD231</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

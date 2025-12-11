@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AutoHub Multi-Brand Dealership - Explore available vehicles by brand, model, and price.">
+  <meta name="author" content="Ayobami I. Akinbiyi">
+  <title>AutoHub | Inventory Page</title>
+
+  <link rel="icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="styles/reset.css"/>
+  <link rel="stylesheet" href="styles/base.css"/>
+  <link rel="stylesheet" href="styles/site.css"/>
+
+  <!-- <script type="module" src="scripts/main.js" defer></script> -->
+  <script type="module" src="scripts/inventory.js" defer></script>
+</head>
+
+<body>
+
+  <!-- === HEADER (Same as Home Page) === -->
+  <header>
+    <div class="logo">AutoHub</div>
+    <button id="menuBtn" aria-label="Open Menu">&#9776;</button>
+
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="inventory.html" class="active">Inventory</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- ==== MAIN CONTENT ==== -->
+  <main>
+
+    <!-- INVENTORY HEADER -->
+    <section class="inventory-header">
+      <h1>Explore Our Full Inventory</h1>
+      <p>Select your preferred brand, model type, and price range.</p>
+    </section>
+
+    <!-- FILTERS & SORTING -->
+    <section class="filters">
+      <div class="filter-group">
+        <label for="brandFilter">Filter by Brand:</label>
+        <select id="brandFilter">
+          <option value="all">All Brands</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="sortPrice">Sort by Price:</label>
+        <select id="sortPrice">
+          <option value="default">Default</option>
+          <option value="low-high">Low → High</option>
+          <option value="high-low">High → Low</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- INVENTORY GRID -->
+    <section class="inventory-grid">
+      <div class="grid" id="inventoryGrid">
+        <!-- JS will insert cards here -->
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==== FOOTER (Same as Home Page) === -->
+  <footer>
+    <p>&copy; <span id="year"></span> 🚘 AutoHub 🚘 Multi-Brand Dealership 🚘 </p>
+    <p> 🚘 Designed by Ayobami Akinbiyi - WDD231 🚘 </p>
+    <a href="attributions.html">Attributions</a> | 
+    <a href="video.html">Project Video</a>
+    <p>Last Modified: <span id="lastMod"></span></p>
+  </footer>
+
+</body>
+</html>
